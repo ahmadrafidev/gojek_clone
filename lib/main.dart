@@ -9,6 +9,7 @@ import 'package:gojek_clone/screens/starting_page.dart';
 import 'package:gojek_clone/screens/tabs_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -18,11 +19,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const StartingPage(),
+      home: const TabsScreen(),
       routes: {
         SignUp.routeName: (ctx) => const SignUp(),
         LogIn.routeName: (ctx) => const LogIn(),
-        TabsScreen.routeName: (ctx) => const TabsScreen(),
         HomePage.routeName: (ctx) => const HomePage(),
         PromoPage.routeName: (ctx) => const PromoPage(),
         OrderPage.routeName: (ctx) => const OrderPage(),
