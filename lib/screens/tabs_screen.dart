@@ -31,33 +31,33 @@ class _TabsScreenState extends State<TabsScreen> {
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
-          icon: const Icon(CupertinoIcons.home),
+          icon: const Icon(CupertinoIcons.house_fill),
           title: ("Home"),
-          activeColorPrimary: CupertinoColors.white,
-          inactiveColorPrimary: CupertinoColors.white,
+          activeColorPrimary: CupertinoColors.systemGreen,
+          inactiveColorPrimary: CupertinoColors.systemGrey,
           textStyle:
-              const TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
+              const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
       PersistentBottomNavBarItem(
-          icon: const Icon(CupertinoIcons.sparkles),
+          icon: const Icon(CupertinoIcons.percent),
           title: ("Promos"),
-          activeColorPrimary: CupertinoColors.white,
-          inactiveColorPrimary: CupertinoColors.white,
+          activeColorPrimary: CupertinoColors.systemGreen,
+          inactiveColorPrimary: CupertinoColors.systemGrey,
           textStyle:
-              const TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
+              const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
       PersistentBottomNavBarItem(
-          icon: const Icon(CupertinoIcons.cart),
+          icon: const Icon(CupertinoIcons.square_list_fill),
           title: ("Orders"),
-          activeColorPrimary: CupertinoColors.white,
-          inactiveColorPrimary: CupertinoColors.white,
+          activeColorPrimary: CupertinoColors.systemGreen,
+          inactiveColorPrimary: CupertinoColors.systemGrey,
           textStyle:
-              const TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
+              const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
       PersistentBottomNavBarItem(
-          icon: const Icon(CupertinoIcons.chat_bubble),
+          icon: const Icon(CupertinoIcons.chat_bubble_fill),
           title: ("Chat"),
-          activeColorPrimary: CupertinoColors.white,
-          inactiveColorPrimary: CupertinoColors.white,
+          activeColorPrimary: CupertinoColors.systemGreen,
+          inactiveColorPrimary: CupertinoColors.systemGrey,
           textStyle:
-              const TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
+              const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
     ];
   }
 
@@ -68,8 +68,8 @@ class _TabsScreenState extends State<TabsScreen> {
       controller: _controller,
       screens: _buildScreens(),
       confineInSafeArea: true,
-      backgroundColor: Colors.green.shade500,
-      navBarStyle: NavBarStyle.style1,
+      backgroundColor: Colors.white,
+      navBarStyle: NavBarStyle.style6,
       items: _navBarsItems(),
       handleAndroidBackButtonPress: true,
       resizeToAvoidBottomInset: true,
