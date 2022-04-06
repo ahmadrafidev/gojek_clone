@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 
-import 'package:gojek_clone/screens/chat.dart';
+import 'package:gojek_clone/screens/chat_page.dart';
 import 'package:gojek_clone/screens/home_page.dart';
 import 'package:gojek_clone/screens/orders.dart';
 import 'package:gojek_clone/screens/promo_page.dart';
